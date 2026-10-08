@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.blur
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -56,7 +57,14 @@ fun ActivitasPertama(modifier: Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(all =5.dp)
                 )
-                Spacer(modifier = Modifier.width(20.dp))
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource("Drivandi Pratama"),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive
+                    )
+                }
             }
         }
     }
